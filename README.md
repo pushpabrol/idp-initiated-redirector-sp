@@ -14,7 +14,7 @@ This repo contains steps and source code for the redirect hub demo.
 
 2. Create a redirect hub application in Auth0 – In the sample this application runs at http://localhost:3000. 
     1. Name: Redirect Hub
-    2. Allowed Callback URLs: http://localhost:3000/callback
+    2. Allowed Callback URLs: http://localhost:3000/callback,http://localhost:3000/login
     3. Connections: Make sure SAMLIDP is a an active connection for this application
     4.	On the settings page for this application go to Show Advanced Settings, click it to show advanced sections. Click on the OAuth tab and turn off “OIDC Conformant”. Turning this flag off allow allows this application to prime the IDP initiated session such that SSO can be achieved. Make sure you click on Save under Advanced Settings
 
