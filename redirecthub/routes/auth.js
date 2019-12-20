@@ -15,7 +15,6 @@ var ALLOWED_RETURNTO= process.env.RETURNTO_WHITELIST.split(",");
 router.get('/login', (req, res, next) => {
     // Need to strip off code and state from request
     const returnTo = req.query.state;
-    console.log(req.query)
     // Simple Whitelist check
     if (ALLOWED_RETURNTO.indexOf(returnTo) > -1 ) {
       req.session.returnTo = returnTo;
@@ -38,8 +37,6 @@ router.get('/login', (req, res, next) => {
 // Perform the final stage of authentication and redirect to previously requested URL or '/user'
 router.get('/callback', function (req, res, next) {
   passport.authenticate('auth0', function (err, user, info) {
-    console.log(err);
-    console.log(user);
     if (err) { return next(err); }
     if (!user) { return res.redirect('/login'); }
     req.logIn(user, function (err) {
