@@ -25,8 +25,8 @@ This repo contains steps and source code for the redirect hub demo.
 
 4.	Update the IDP initiated authentication settings for the enterprise connection created at Step 1 – 
     1.	Select the Default Application: Redirect Hub
-    2.	Query String: response_type=code&scope=openid profile&redirect_uri=http://localhost:3000/login
-
+    2.  Response Protocol: OpenID Connect
+    3.	Query String: response_type=code&scope=openid profile&redirect_uri=http://localhost:3000/login
 
 ### Application Source Code
 1. [Redirect Hub](/redirecthub)
