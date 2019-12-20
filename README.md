@@ -28,11 +28,11 @@ This repo contains steps and source code for the redirect hub demo.
     2.	Query String: response_type=code&scope=openid profile&redirect_uri=http://localhost:3000/login
 
 
-### Application Source Code:
-	[Redirect Hub](/redirecthub)
-        Make note of the Client ID, Client Secret, Domain of the `Redirect Hub` for setting the Environment variables for this application      
-	[SPA](/spa)
-        Make note of the Client ID, Domain of the `Service Provider` for setting the Environment variables for this application
+### Application Source Code
+1. [Redirect Hub](/redirecthub)
+    - Make note of the Client ID, Client Secret, Domain of the `Redirect Hub` for setting the Environment variables for this application      
+2. [SPA](/spa)
+    - Make note of the Client ID, Domain of the `Service Provider` application for setting the Environment variables for this application
 
 ```
 Note: This is just POC sample code and is not production ready. The POC was done to demo IPD Initiated login followed by OIDC SP login using SSO.
