@@ -10,7 +10,7 @@ This repo contains steps and source code for the redirect hub demo.
 
 #### Auth0 Setup:
 
-1. Create a federated enterprise connection to an IDP in Auth0. This IDP should support IDP initiated Authentication and pass SAMLResponse with RelayState containing the downstream applications URL. Let’s say the name for this connection is SAMLIDP
+1. Create a federated enterprise connection to a SAML IDP in Auth0. This IDP should support IDP initiated Authentication and pass *SAMLResponse* with *RelayState* containing the downstream applications URL to Auth0. Let’s say the name for this connection is SAMLIDP
 
 2. Create a redirect hub application in Auth0 – In the sample this application runs at http://localhost:3000. 
     1. Name: Redirect Hub
