@@ -4,7 +4,7 @@
 This repo contains steps and source code for the redirect hub demo.
 
 ### Authentication Flow:
- 
+ ![IDP Initiated flow](/IDP-Auth-authorize-SequenceDiagram.jpg) 
 
 ### Setup:
 
@@ -29,9 +29,9 @@ This repo contains steps and source code for the redirect hub demo.
 
 
 ### Application Source Code:
-	Redirect Hub: /redirecthub
+	[Redirect Hub](/redirecthub)
         Make note of the Client ID, Client Secret, Domain of the `Redirect Hub` for setting the Environment variables for this application      
-	SPA: /spa
+	[SPA](/spa)
         Make note of the Client ID, Domain of the `Service Provider` for setting the Environment variables for this application
 
 ```
