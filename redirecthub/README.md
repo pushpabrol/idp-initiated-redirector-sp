@@ -8,7 +8,7 @@ Install the dependencies.
 npm install
 ```
 
-Rename `.env.example` to `.env` and replace the values for `AUTH0_CLIENT_ID`, `AUTH0_DOMAIN`, and `AUTH0_CLIENT_SECRET` with your Auth0 credentials. If you don't yet have an Auth0 account, [sign up](https://auth0.com/signup) for free.
+Rename `.env.example` to `.env` and replace the values for `AUTH0_CLIENT_ID`, `AUTH0_DOMAIN`, `RETURNTO_WHITELIST` and `AUTH0_CLIENT_SECRET` with your Auth0 credentials & whitelist urls. If you don't yet have an Auth0 account, [sign up](https://auth0.com/signup) for free. For this demo the `RETURNTO_WHITELIST` is hardcoded to `http://localhost:3001/profile,http://localhost:3002/profile,http://localhost:3003/profile`
 
 ```bash
 # copy configuration and replace with your own
